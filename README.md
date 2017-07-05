@@ -2,7 +2,7 @@
 
 # Amazon Rekognition - Face detection using deep learning
 
-This is an application that leverages AWS Rekognition for face detection and comparison.It also uses AWS Polly for audio confirmation if a match is found and greets the user.Please see the documentation at https://www.playframework.com/documentation/latest/Home for more details.
+This is an application that leverages AWS Rekognition for face detection and comparison.It also uses AWS Polly for audio confirmation if a match is found and greets the user.Please see the documentation at https://aws.amazon.com/rekognition/ for more details.
 
 ## Running
 
