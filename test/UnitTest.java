@@ -1,6 +1,6 @@
 import akka.actor.ActorSystem;
-import controllers.AsyncController;
-import controllers.CountController;
+import controllers.CompareFacesController;
+import controllers.HomeController;
 import org.junit.Test;
 import play.mvc.Result;
 import scala.concurrent.ExecutionContextExecutor;
@@ -26,14 +26,14 @@ public class UnitTest {
 
     // Unit test a controller
     @Test
-    public void testCount() {
-        final CountController controller = new CountController(() -> 49);
-        Result result = controller.count();
-        assertThat(contentAsString(result)).isEqualTo("49");
+    public void testCompare() {
+        final HomeController controller = new HomeController();
+        Result result = controller.index();
+        assertThat(contentAsString(result)).contains("Welcome to AWS Rekog!");
     }
 
     // Unit test a controller with async return
-    @Test
+    /*@Test
     public void testAsync() {
         final ActorSystem actorSystem = ActorSystem.create("test");
         try {
@@ -50,6 +50,6 @@ public class UnitTest {
         } finally {
             actorSystem.terminate();
         }
-    }
+    }*/
 
 }

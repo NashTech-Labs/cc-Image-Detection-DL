@@ -67,7 +67,7 @@ $(document).ready(function() {
 
       var collection_id = $("#collection_id").val();
       if (!collection_id.length) {
-                    $("#upload_status").html("Please provide name of collection to compare the image in!");
+                    $("#upload_status").html("Please provide name for the collection!");
                     ref.data('requestNotRunning', false);
                     return;
                   }
